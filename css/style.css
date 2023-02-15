@@ -15,47 +15,74 @@ body {
 
 
 .calcBody {
-    width: 400px;
+    width: 350px;
     height: 500px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-width:1px;
+    border-color: gray;
     background-color: lightgray;
     display: flex;
     flex-direction:column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
 }
 
 .calcDisplay {
     background-color: rgb(255, 175, 143);
-    width: 350px;
+    width: 300px;
     height: 100px;
+    border-radius: 25px 25px 25px 25px;
+    border-style: solid;
+    border-width:1px;
+    border-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.calcClear {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 68, 68);
+    width: 60px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 40px;
+    font-weight:900;
+    cursor: pointer;    
+}
+
 .calcButtons {
-    background-color: rgb(232, 143, 252);
+    background-color: rgb(138, 138, 138);
     display: grid;
-    grid-template-columns: 85px 85px 85px 85px;
-    grid-template-rows: 70px 70px 70px 70px;
-    place-items: center;
+    width: 300px;
+    height: 250px;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 60px);
     border-radius: 5px 5px 5px 5px;
+    justify-content: space-around;
+    place-items: center;
+    align-content: center;
 }
 
 .buttons {
-    background-color: rgb(86, 73, 255);
+    background-color: rgb(81, 142, 255);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 70px;
+    justify-content: center;
+    width: 60px;
     height: 50px;  
     border-radius: 10px 10px 10px 10px;
-    font: 35px bold;
-    cursor: pointer;
+    font-size: 40px;
+    font-weight:900;
+    cursor: pointer;    
 }
 
 .buttons:hover {
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     background-color: rgb(79, 214, 254);
 }
